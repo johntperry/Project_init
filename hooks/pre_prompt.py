@@ -1,1 +1,1 @@
-# File that defines some of the cookiecutter 
+# File that defines some of the cookiecutter values before they are asked as questions, reading any 'project_defaults' file in the path of the initialised project.
