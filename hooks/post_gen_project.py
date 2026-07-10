@@ -25,6 +25,7 @@ scientific = [
 # Robotics / simulation
 robotics = [
     "mujoco==3.2.5",
+    "mediapy",
 ]
 
 
