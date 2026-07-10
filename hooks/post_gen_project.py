@@ -26,6 +26,7 @@ scientific = [
 robotics = [
     "mujoco==3.2.5",
     "mediapy",
+    "imageio-ffmpeg",
 ]
 
 
