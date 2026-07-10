@@ -24,7 +24,7 @@ scientific = [
 
 # Robotics / simulation
 robotics = [
-    "mujoco",
+    "mujoco==3.2.5",
 ]
 
 
