@@ -3,20 +3,53 @@
 from pathlib import Path
 import subprocess
 
+
 PROJECT_TYPE = "{{ cookiecutter.project_type }}"
 USE_JUPYTER = "{{ cookiecutter.use_jupyter }}" == "yes"
 
+
+# Common tools
+base = [
+    "numpy",
+]
+
+
+# Scientific computing
+scientific = [
+    "scipy",
+    "matplotlib",
+    "pandas",
+]
+
+
+# Robotics / simulation
+robotics = [
+    "mujoco",
+]
+
+
+# Development tools
+dev = [
+    "pytest",
+]
+
+
+# Construct profiles
 profiles = {
-    "base": [
-        "numpy",
+    "minimal": [
+        *base,
+        *dev,
     ],
     "scientific": [
-        "scipy",
-        "matplotlib",
-        "pandas",
+        *base,
+        *scientific,
+        *dev,
     ],
     "robotics": [
-        "mujoco",
+        *base,
+        *scientific,
+        *robotics,
+        *dev,
     ],
 }
 

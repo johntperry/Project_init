@@ -3,18 +3,12 @@
 
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
 
-    "author_name": [
-        "Your Name",
-        "none"
-    ],
+    "author_name": "Your Name",
 
-    "author_affiliation": [
-        "Affiliation",
-        "none"
-    ],
+    "author_affiliation": "Affiliation",
 
     "project_type": [
-        "base",
+        "minimal",
         "scientific",
         "robotics"
     ],
