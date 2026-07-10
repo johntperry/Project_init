@@ -63,7 +63,23 @@ if USE_JUPYTER:
 
 subprocess.run(["uv", "venv"], check=True)
 
-if packages:
-    subprocess.run(["uv", "add", *packages], check=True)
+
+try:
+    if packages:
+        subprocess.run(
+            ["uv", "add", *packages], 
+            check=True
+        )
+except subprocess.CalledProcessError:
+    print(
+        """
+        uv failed while installing dependencies.
+
+        Try running:
+            uv sync
+
+        manually after fixing the issue
+        """
+    )
 
 print("Project ready!")
