@@ -1,8 +1,28 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+
+# Type checking / linting
+.pyright/
+
+# IDEs
+.vscode/*
+!.vscode/settings.json
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LaTeX-common filetypes
 *.aux
 *.bcf
-*.log
 *.out
-*.xml
 *.gz
 *.dvi
 *.pdf
