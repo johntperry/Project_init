@@ -67,7 +67,7 @@ subprocess.run(["uv", "venv"], check=True)
 try:
     if packages:
         subprocess.run(
-            ["uv", "add", *packages], 
+            ["uv", "add", "--no-sync", *packages], 
             check=True
         )
 except subprocess.CalledProcessError:
