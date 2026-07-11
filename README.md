@@ -19,5 +19,6 @@ When (if) setting up MuJoCo:
 - Currently the MuJoCo version called is significantly older than the current best, due to ongoing issues with syncing across versions. If in future the version of MuJoCo (and Python) are wished to be updated, then refer to this issues log: https://github.com/google-deepmind/mujoco/issues/2275.
 
 Future additions: (update latex init also)
+- Add the ability to create a project with Manim functionality (maybe a 'teaching' init?)
 - Have a hook that allows a pre-prompt to check if there are any properties which can be inherited as a daughter file to a larger project.
 - This should read the 'project_defaults' json and reduce the number of questions that need to be answered each time a folder is copied.
