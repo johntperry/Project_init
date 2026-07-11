@@ -29,6 +29,10 @@ robotics = [
     "imageio-ffmpeg",
 ]
 
+# Teaching / demonstration tools
+teaching = [
+    "manim",
+]
 
 # Development tools
 dev = [
@@ -53,6 +57,12 @@ profiles = {
         *robotics,
         *dev,
     ],
+    "demonstration": [
+        *base,
+        *scientific,
+        *teaching,
+        *dev,
+    ]
 }
 
 packages = profiles[PROJECT_TYPE]
