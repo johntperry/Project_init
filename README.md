@@ -12,8 +12,8 @@ Running files within the directory:
 - uv run python {file}.py
 
 To set up video properly, the ffmpeg path must be updated using the following (in a Jupyter notebook):
-    ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
-    media._config.ffmpeg_name_or_path = ffmpeg_path
+- ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
+- media._config.ffmpeg_name_or_path = ffmpeg_path
 
 When (if) setting up MuJoCo:
 - Currently the MuJoCo version called is significantly older than the current best, due to ongoing issues with syncing across versions. If in future the version of MuJoCo (and Python) are wished to be updated, then refer to this issues log: https://github.com/google-deepmind/mujoco/issues/2275.
