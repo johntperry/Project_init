@@ -1,3 +1,9 @@
 {
-    
+    "project_name": "{{ cookiecutter.project_name }}",
+
+    "project_slug": "{{ cookiecutter.project_slug }}",
+
+    "author_name": "{{ cookiecutter.author_name }}",
+
+    "author_affiliation": "{{ cookiecutter.author_affiliation }}"
 }

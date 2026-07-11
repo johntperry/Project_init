@@ -10,7 +10,8 @@
     "project_type": [
         "minimal",
         "scientific",
-        "robotics"
+        "robotics",
+        "demonstration"
     ],
 
     "use_jupyter": [
