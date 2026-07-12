@@ -4,8 +4,8 @@ and then input the names of desired arguments to finish the setup.
 
 To ensure modules install correctly, due to aggressive caching used by uv add the following exclusions from your antivirus software:
 - Customise to wherever uv is installed on your machine.
-- C:\Users\\{user}\AppData\Local\uv\cache\
-- C:\Users\\{user}\AppData\Roaming\uv\python\
+- C:\Users\{user}\AppData\Local\uv\cache\
+- C:\Users\{user}\AppData\Roaming\uv\python\
 
 Running files within the directory:
 - If running files within this directory, this is done via the command line and the following is run:
