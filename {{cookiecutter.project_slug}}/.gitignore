@@ -31,3 +31,7 @@ env/
 *.dvi
 *.pdf
 *.png
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
