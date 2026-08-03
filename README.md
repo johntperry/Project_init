@@ -4,7 +4,9 @@ This file uses cookiecutter to instantly generate a project folder in the format
 
 Generate this template from the command line in the folder desired using the command:
 
-- python -m cookiecutter https://github.com/johntperry/Project_init.git
+`
+python -m cookiecutter https://github.com/johntperry/Project_init.git
+`
 
 then inputting the names of desired arguments to finish the setup.
 
@@ -15,11 +17,17 @@ To ensure modules install correctly, due to aggressive caching used by uv add th
 ## Running code within the directory
 
 If running files within this directory, this is done via the command line and the following is run after cd-ing into the correct folder:
-- uv run python {file}.py
+
+`
+uv run python {file}.py
+`
 
 In Jupyter, to set up video properly, the ffmpeg path must be updated using the following (in a Jupyter notebook):
-- ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
-- media._config.ffmpeg_name_or_path = ffmpeg_path
+
+```
+ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
+media._config.ffmpeg_name_or_path = ffmpeg_path
+```
 
 When (if) setting up MuJoCo:
 - Currently the MuJoCo version called is significantly older than the current best, due to ongoing issues with syncing across versions. If in future the version of MuJoCo (and Python) are wished to be updated, then refer to this issues log: https://github.com/google-deepmind/mujoco/issues/2275.
