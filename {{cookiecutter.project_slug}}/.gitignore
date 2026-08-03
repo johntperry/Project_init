@@ -36,6 +36,23 @@ env/
 *.fdb_latexmk
 *.fls
 
+# Common 3D file types - MAY CHOOSE TO CHANGE AND ADD STEP FILES TO GIT, ONCE THE PROJECT IS FINISHED OR AT A SIGNIFICANT MILESTONE
+*.step
+*.stp
+*.iges
+*.igs
+*.stl
+*.obj
+*.3mf
+
+# G-code file types
+*.gcode.3mf
+*.gcode
+
+# Solidworks ownership lock and recovery pointers
+~$*.sld*
+~$*.sd*
+
 # Solidworks simulation file types
 *.CWR
 *.DSP

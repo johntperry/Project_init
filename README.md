@@ -1,17 +1,23 @@
-This file uses cookiecutter to instantly generate a project folder in the format desired, generate from the command line in the folder desired using the command:
-python -m cookiecutter https://github.com/johntperry/Project_init.git
-and then input the names of desired arguments to finish the setup.
+This file uses cookiecutter to instantly generate a project folder in the format desired. 
 
-To ensure modules install correctly, due to aggressive caching used by uv add the following exclusions from your antivirus software:
-- Customise to wherever uv is installed on your machine.
-- C:\Users\{user}\AppData\Local\uv\cache\
-- C:\Users\{user}\AppData\Roaming\uv\python\
+## Initialisation
 
-Running files within the directory:
-- If running files within this directory, this is done via the command line and the following is run:
+Generate this template from the command line in the folder desired using the command:
+
+- python -m cookiecutter https://github.com/johntperry/Project_init.git
+
+then inputting the names of desired arguments to finish the setup.
+
+To ensure modules install correctly, due to aggressive caching used by uv add the following exclusions from your antivirus software: (customise to the location of uv on your machine)
+- C:\Users\user\AppData\Local\uv\cache\
+- C:\Users\user\AppData\Roaming\uv\python\
+
+## Running code within the directory
+
+If running files within this directory, this is done via the command line and the following is run after cd-ing into the correct folder:
 - uv run python {file}.py
 
-To set up video properly, the ffmpeg path must be updated using the following (in a Jupyter notebook):
+In Jupyter, to set up video properly, the ffmpeg path must be updated using the following (in a Jupyter notebook):
 - ffmpeg_path = imageio_ffmpeg.get_ffmpeg_exe()
 - media._config.ffmpeg_name_or_path = ffmpeg_path
 
