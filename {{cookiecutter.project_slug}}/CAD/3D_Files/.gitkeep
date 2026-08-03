@@ -1,1 +1,6 @@
-Folder should contain the 3D files of parts used in CAD design.
+Folder should contain the 3D (e.g. STEP) files of parts used in CAD design.
+
+These are predominantly files such as STEP obtained of standard parts.
+
+If using SOLIDWORKS:
+- To prevent rebuild errors, upon downloading a given STEP/other file it must be converted to a SLDPRT and placed in /Parts/ for use.
