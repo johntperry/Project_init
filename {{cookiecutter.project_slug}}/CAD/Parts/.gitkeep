@@ -1,3 +1,9 @@
 Folder should contain (nested or not) the 3D CAD files used in the design.
 
 More specifically, this means the SOLIDWORKS (or other) files that are directly addressed by a project.
+
+To prevent the directory from being clogged up with part files, consider doing the following:
+- Immediately creating a 'version_1' directory, within which to put files from the first iteration. 
+    - Because of the way that SOLIDWORKS has inter-linking referencing moving parts can cause issues.
+
+It may be tempting to create a separate directory for assemblies or 'with hardware' components, but provided enough nested assemblies are used to minimise complexity in the final mother assembly, sorting by assembly file in file explorer should be sufficient.
