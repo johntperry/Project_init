@@ -9,5 +9,20 @@
         }
     ],
     "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.latex.currentRecipe.name": "latexmk 🔃"
+    "latex-workshop.latex.currentRecipe.name": "latexmk 🔃",
+    "files.exclude": {
+        "**/Documentation/*/*.aux": true,
+        "**/Documentation/*/*.log": true,
+        "**/Documentation/*/*.fls": true,
+        "**/Documentation/*/*.fdb_latexmk": true,
+        "**/Documentation/*/*.synctex.gz": true,
+        "**/Documentation/*/*.bbl": true,
+        "**/Documentation/*/*.blg": true,
+        "**/Documentation/*/*.out": true,
+        "**/Documentation/*/*.toc": true,
+        "**/Documentation/*/*.lof": true,
+        "**/Documentation/*/*.lot": true,
+        "**/Documentation/*/*.bcf": true,
+        "**/Documentation/*/*.run.xml": true
+    }
 }
