@@ -17,5 +17,7 @@
     "use_jupyter": [
         "yes",
         "no"
-    ]
+    ],
+
+    "include_vscode": "y"
 }

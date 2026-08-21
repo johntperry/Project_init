@@ -1,4 +1,14 @@
 {
+    // Set my default vscode preferences.
+    // Necessary vscode extensions are:
+    // Python
+    // Python Debugger
+    // BasedPyright
+    // Ruff
+    // LaTeX
+    // LaTeX Workshop
+
+    // Python vscode preferences
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 
     "[windows]": {
@@ -11,6 +21,15 @@
         "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
     },
 
+    "python.languageServer": "None",
+    "editor.semanticHighlighting.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    },
+    
+
+    // LaTeX vscode preferences
     "latex-workshop.latex.recipes": [
         {
             "name": "latexmk 🔃",
