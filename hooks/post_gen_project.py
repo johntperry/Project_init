@@ -1,8 +1,8 @@
 'Generates different project profiles based on expected tasks'
 
-from pathlib import Path
+import shutil
 import subprocess
-
+from pathlib import Path
 
 PROJECT_TYPE = "{{ cookiecutter.project_type }}"
 USE_JUPYTER = "{{ cookiecutter.use_jupyter }}" == "yes"
@@ -93,5 +93,14 @@ except subprocess.CalledProcessError:
         manually after fixing the issue
         """
     )
+
+# Check if the user wants to use the vscode preferences.
+
+INCLUDE_VSCODE = "{{ cookiecutter.include_vscode }}".lower()
+
+if INCLUDE_VSCODE != "yes":
+    vscode_dir = Path.cwd() / ".vscode"
+    if vscode_dir.exists():
+        shutil.rmtree(vscode_dir)
 
 print("Project ready!")
