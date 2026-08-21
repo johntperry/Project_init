@@ -19,5 +19,8 @@
         "no"
     ],
 
-    "include_vscode": "y"
+    "include_vscode": [
+        "yes",
+        "no"
+    ]
 }
