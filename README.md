@@ -32,6 +32,8 @@ media._config.ffmpeg_name_or_path = ffmpeg_path
 When (if) setting up MuJoCo:
 - Currently the MuJoCo version called is significantly older than the current best, due to ongoing issues with syncing across versions. If in future the version of MuJoCo (and Python) are wished to be updated, then refer to this issues log: https://github.com/google-deepmind/mujoco/issues/2275.
 
-Future additions: (update latex init also)
+### Future additions: (update latex init also)
 - Have a hook that allows a pre-prompt to check if there are any properties which can be inherited as a daughter file to a larger project.
-- This should read the 'project_defaults' json and reduce the number of questions that need to be answered each time a folder is copied.
+    - This should read the 'project_defaults' json and reduce the number of questions that need to be answered each time a folder is copied.
+- Add a hook to potentially append the .gitignore list to the __uv__ gitignore (in /.venv/), slightly cleaning up the appearance of the final production project.
+    - Consider also having an exception of the .gitignore itself to still be synced via git by adding an exception to the /.venv/ directory, allowing .gitignore within .venv to be synced.
