@@ -36,6 +36,8 @@ env/
 *.fdb_latexmk
 *.fls
 *.run.xml
+*.bbl-SAVE-ERROR
+*.bcf-SAVE-ERROR
 
 # Common 3D file types - MAY CHOOSE TO CHANGE AND ADD STEP FILES TO GIT, ONCE THE PROJECT IS FINISHED OR AT A SIGNIFICANT MILESTONE
 *.step
