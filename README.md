@@ -37,3 +37,7 @@ When (if) setting up MuJoCo:
     - This should read the 'project_defaults' json and reduce the number of questions that need to be answered each time a folder is copied.
 - Add a hook to potentially append the .gitignore list to the __uv__ gitignore (in /.venv/), slightly cleaning up the appearance of the final production project.
     - Consider also having an exception of the .gitignore itself to still be synced via git by adding an exception to the /.venv/ directory, allowing .gitignore within .venv to be synced.
+- Add different 'fundamental' python libraries/functions that would be valuable for different cases. For example:
+    - A plotting.py file, which has a bunch of useful shortcuts to clean up some of the matplotlib mess into a more pleasant format. Specifically, this should target the ease of use to plot more complex behaviours in one or two lines.
+    - Additionally to above, use python libraries to update the appearance of matplotlib, or have a '.mplstyle' file included with this project init.
+    - _For MuJoCo_: A simple simulation file template, which makes it easier to simulate a basic scene without a lot of the complex set-up. It could come with a baked-in class structure it expects as an input, improving speed of iteration.
