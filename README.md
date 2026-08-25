@@ -40,4 +40,4 @@ When (if) setting up MuJoCo:
 - Add different 'fundamental' python libraries/functions that would be valuable for different cases. For example:
     - A plotting.py file, which has a bunch of useful shortcuts to clean up some of the matplotlib mess into a more pleasant format. Specifically, this should target the ease of use to plot more complex behaviours in one or two lines.
     - Additionally to above, use python libraries to update the appearance of matplotlib, or have a '.mplstyle' file included with this project init.
-    - _For MuJoCo_: A simple simulation file template, which makes it easier to simulate a basic scene without a lot of the complex set-up. It could come with a baked-in class structure it expects as an input, improving speed of iteration.
+    - _For MuJoCo_: A simple simulation file template, which makes it easier to simulate a basic scene without a lot of the complex set-up. It could come with a baked-in class structure it expects as an input, improving speed of iteration. This file could then be removed by a post_gen_hook if not needed.
