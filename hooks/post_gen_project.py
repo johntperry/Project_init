@@ -18,6 +18,7 @@ base = [
 scientific = [
     "scipy",
     "matplotlib",
+    "PySide6", # Required to display the pop-ups that appear in matplotlib
     "pandas",
 ]
 
