@@ -41,18 +41,18 @@
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.currentRecipe.name": "latexmk 🔃",
     "files.exclude": {
-        "**/Documentation/*/*.aux": true,
-        "**/Documentation/*/*.log": true,
-        "**/Documentation/*/*.fls": true,
-        "**/Documentation/*/*.fdb_latexmk": true,
-        "**/Documentation/*/*.synctex.gz": true,
-        "**/Documentation/*/*.bbl": true,
-        "**/Documentation/*/*.blg": true,
-        "**/Documentation/*/*.out": true,
-        "**/Documentation/*/*.toc": true,
-        "**/Documentation/*/*.lof": true,
-        "**/Documentation/*/*.lot": true,
-        "**/Documentation/*/*.bcf": true,
-        "**/Documentation/*/*.run.xml": true
+        "**/Docs/*/*.aux": true,
+        "**/Docs/*/*.log": true,
+        "**/Docs/*/*.fls": true,
+        "**/Docs/*/*.fdb_latexmk": true,
+        "**/Docs/*/*.synctex.gz": true,
+        "**/Docs/*/*.bbl": true,
+        "**/Docs/*/*.blg": true,
+        "**/Docs/*/*.out": true,
+        "**/Docs/*/*.toc": true,
+        "**/Docs/*/*.lof": true,
+        "**/Docs/*/*.lot": true,
+        "**/Docs/*/*.bcf": true,
+        "**/Docs/*/*.run.xml": true
     }
 }
