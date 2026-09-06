@@ -1,0 +1,3 @@
+This folder should contain all default 'Off The Shelf' parts used in the design, to keep the directory tree clean.
+
+It is not yet clear how this directory should be arranged, but shouldn't have more than just a separate 'Hardware' section for nuts/bolts as that could clog up the folder.

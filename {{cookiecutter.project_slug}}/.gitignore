@@ -52,6 +52,11 @@ env/
 *.gcode.3mf
 *.gcode
 
+# Ignore all off-the-shelf parts as they only serve to clog up the git tree. Maybe include as a zip file when done.
+!/OTS/
+/OTS/*
+!**/OTS/.gitkeep
+
 # Solidworks ownership lock and recovery pointers
 ~$*.sld*
 ~$*.sd*
