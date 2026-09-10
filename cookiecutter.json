@@ -10,6 +10,7 @@
     "project_type": [
         "minimal",
         "scientific",
+        "AI",
         "robotics",
         "demonstration"
     ],
