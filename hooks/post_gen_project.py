@@ -25,7 +25,7 @@ scientific = [
 
 # Robotics / simulation
 robotics = [
-    "mujoco==3.2.5",
+    "mujoco",
     "mediapy",
     "imageio-ffmpeg",
 ]
@@ -40,6 +40,9 @@ dev = [
     "pytest",
 ]
 
+ai = [
+    "torch",    # https://pytorch.org/
+]
 
 # Construct profiles
 profiles = {
@@ -51,6 +54,12 @@ profiles = {
         *base,
         *scientific,
         *dev,
+    ],
+    "AI": [
+        *base,
+        *scientific,
+        *dev,
+        *ai,
     ],
     "robotics": [
         *base,
