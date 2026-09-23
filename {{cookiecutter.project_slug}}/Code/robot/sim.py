@@ -10,11 +10,12 @@ from pathlib import Path
 import mujoco as mj
 import numpy as np
 import pandas as pd
-from constants import *
-from control import create_1d_control_path
 from mujoco.glfw import glfw
-from simulation.robot import RobotClassToImport
 from simulation.lib import data_out, init_names
+from simulation.robot import RobotClassToImport
+
+from Code.robot.constants import *
+from Code.robot.control import create_1d_control_path
 
 ### ---------- PROPERTIES TO CHANGE ------------ ###
 

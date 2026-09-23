@@ -7,8 +7,9 @@ import string
 
 import mujoco as mj
 import numpy as np
-from constants import *
-from control import Control, Waypoint
+
+from Code.robot.constants import *
+from Code.robot.control import Control, Waypoint
 
 
 class Robot:
