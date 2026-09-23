@@ -104,7 +104,15 @@ except subprocess.CalledProcessError:
         """
     )
 
-# Check if the user wants to use the vscode preferences.
+# Remove robotics files if robotics preset not used
+
+if PROJECT_TYPE != "robotics":
+    robot_dir = Path.cwd() / "Code/robot"
+    if robot_dir.exists():
+        shutil.rmtree(robot_dir)
+    
+
+# Check if the user wants to use the vscode preferences
 
 INCLUDE_VSCODE = "{{ cookiecutter.include_vscode }}".lower()
 
