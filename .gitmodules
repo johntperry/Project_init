@@ -1,3 +1,0 @@
-[submodule "{{cookiecutter.project_slug}}/git_cheat_sheet_submodule"]
-	path = {{cookiecutter.project_slug}}/git_cheat_sheet_submodule
-	url = https://gist.github.com/5dfcdf8eec66a051ecd85625518cfd13.git

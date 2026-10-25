@@ -1,7 +1,9 @@
 'Generates different project profiles based on expected tasks'
 
+import os
 import shutil
 import subprocess
+import urllib.request
 from pathlib import Path
 
 PROJECT_TYPE = "{{ cookiecutter.project_type }}"
@@ -120,5 +122,19 @@ if INCLUDE_VSCODE != "yes":
     vscode_dir = Path.cwd() / ".vscode"
     if vscode_dir.exists():
         shutil.rmtree(vscode_dir)
+
+# ------------ Get most current git cheat-sheet added as a file locally. ------------- #
+
+# Raw URL of the Gist cheat sheet
+GIST_URL = "https://gist.githubusercontent.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13/raw/git-conventional-commits.md"
+
+# Target file path inside the generated project
+DESTINATION = "Docs/CONVENTIONS.md"  # or "docs/git-cheat-sheet.md"
+
+try:
+    urllib.request.urlretrieve(GIST_URL, DESTINATION)
+    print(f"✓ Downloaded latest Git Conventional Commits cheat sheet -> {DESTINATION}")
+except Exception as e:
+    print(f"✗ Failed to download cheat sheet: {e}")
 
 print("Project ready!")
