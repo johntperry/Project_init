@@ -130,7 +130,7 @@ if INCLUDE_VSCODE != "yes":
 # ------------ Get most current git cheat-sheet added as a file locally. ------------- #
 
 # Raw URL of the Gist cheat sheet
-GIST_URL = "https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#file-conventional-commits-cheatsheet-md"
+GIST_URL = "https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13/raw/b9888b4761076c5db987e06d4a532634b7052b75/conventional-commits-cheatsheet.md"
 
 # Target file path inside the generated project
 DESTINATION = "Docs/CONVENTIONS.md"
