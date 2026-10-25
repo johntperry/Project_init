@@ -123,13 +123,17 @@ if INCLUDE_VSCODE != "yes":
     if vscode_dir.exists():
         shutil.rmtree(vscode_dir)
 
+
+
+
+
 # ------------ Get most current git cheat-sheet added as a file locally. ------------- #
 
 # Raw URL of the Gist cheat sheet
-GIST_URL = "https://gist.githubusercontent.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13/raw/git-conventional-commits.md"
+GIST_URL = "https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#file-conventional-commits-cheatsheet-md"
 
 # Target file path inside the generated project
-DESTINATION = "Docs/CONVENTIONS.md"  # or "docs/git-cheat-sheet.md"
+DESTINATION = "Docs/CONVENTIONS.md"
 
 try:
     urllib.request.urlretrieve(GIST_URL, DESTINATION)
