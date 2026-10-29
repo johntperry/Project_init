@@ -1,0 +1,61 @@
+[project]
+site_name = "Website Documentation"
+site_url = "https://jp2065.user.srcf.net/docs/project_init/"
+repo_url = "https://github.com/johntperry/Project_init"
+repo_name = "johntperry/Project_init"
+language = "en"
+
+[theme]
+name = "material"
+
+# UI Features
+features = [
+  "navigation.instant",
+  "navigation.expand",
+  "navigation.top",
+  "search.suggest",
+  "search.highlight",
+  "content.code.copy"
+]
+
+# Color Palette / Light & Dark Mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "default"
+primary = "indigo"
+accent = "indigo"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "slate"
+primary = "indigo"
+accent = "indigo"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+# Markdown Extensions
+[markdown]
+extensions = [
+  "admonition",
+  "pymdownx.details",
+  "pymdownx.inlinehilite",
+  "pymdownx.snippets",
+  "pymdownx.superfences",
+  "tables"
+]
+
+# Extension Parameters
+[markdown.extensions_config."pymdownx.highlight"]
+anchor_linenums = true
+
+# Navigation Structure
+[[nav]]
+"Overview" = "index.md"
+
+[[nav]]
+"Getting Started" = [
+  { "General" = "getting-started/general.md" },
+  { "Website serving" = "getting-started/website-serving.md" }
+]
