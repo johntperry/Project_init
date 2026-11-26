@@ -60,6 +60,11 @@ env/
 /OTS/*
 !**/OTS/.gitkeep
 
+# MATLAB file types
+*.slxc
+*.slx.r2026a
+*/slprj/*
+
 # Solidworks ownership lock and recovery pointers
 ~$*.sld*
 ~$*.sd*
